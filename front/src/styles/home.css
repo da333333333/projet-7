@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.home .navigation{
+    width: 40%;
+}
+
+
+button:hover, .button:hover, button:active, .home_button:hover , .button:active {
+    transform: scale(1.1);
+}
+.post_container_message, .post_container_name{
+    overflow: hidden;
+    font-family:  'Lato', sans-serif;
+}
+.post_container_post{
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    padding: 5px;
+}
+.post_flex {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.post_container_likes{
+    font-family: 'Lato', sans-serif; 
+    font-size: medium;
+}
+.post_container_date{
+    font-weight: normal;
+    font-style: oblique;
+    font-family: 'Lato', sans-serif;
+}
+.like_span {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: -23px;
+}
+.like_span i{
+    position: absolute;
+}
+.post_container{
+    border-right: solid var(--primaire);
+    border-bottom: solid var(--primaire);
+    border-top: solid var(--tertiaire);
+    border-left: solid var(--tertiaire);
+    margin-bottom: 6px;
+    border-radius: 6px;
+    position: relative;
+}
+.post_container_name{
+        background-color:  var(--secondaire);
+        border-radius: 6px 6px 0 0;
+        margin: 0;
+}
+.post_container_img{
+    width: 100%;
+    object-fit: contain;
+}
+i:hover{
+    transform: scale(1.25);
+}
+#my_message{
+    width: 100%;
+    min-height: 80px;
+    min-width: 180px;
+    resize: none;
+    background-color: var(--secondaire);
+    border-radius: 6px;
+    padding: 0px;
+    min-width: 180px;
+    border: none;
+    box-shadow: 0 0 10px var(--tertiaire);
+}
+form img {
+    width: 100%;
+}
+p{
+    font-size: 1.2em;
+}
+
+.form_home{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top:40px;
+    position:sticky
+}
+.my_post{
+    width: 40%;
+    height: auto;
+    top: 40px;
+}
+.flex_news h1{
+    align-self: center;
+    width: 100%;
+    text-align: center;
+}
+h1, p{
+    margin:0;
+    font-family: 'Lato', sans-serif;
+    color: var(--tertiaire)
+}
+.home_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    width: 100%;
+    background-color: var(--secondaire);
+    border-radius: 6px;
+    border: none;
+    min-width: 180px;
+    margin-top: 10px;
+    height: 30px;
+    color: var(--tertiaire);
+    box-shadow: inset 7px -7px 20px 0px var(--primaire);
+}
+.home_flex{
+    display: flex;
+}
+.home_button:active{
+    color: var(--primaire);
+}
+
+.flex_news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+
+}
+
+.home_button_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.news{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.posts_list{
+    width: 100%;
+    padding: 0;
+}
+
+@media (max-width: 768px)  {
+  .flex_news h1{
+    text-align: center;
+  }
+    .form_home, .home_button_container{
+        align-items: center;
+        justify-content: center;
+    }
+     .home .navigation, .my_post {
+        width: 45%;
+    }
+    }
+
+@media (max-width: 480px)  {
+#navigation{
+    width: 100%;
+}
+form img {
+    width: 90%;
+}
+.home_button_container{
+    flex-direction: column;
+}
+.home_flex{
+    display: block;
+}
+#my_message{
+    width: 90%;
+}
+.form_home, .home_button_container{
+    align-items: center;
+    justify-content: center;
+}
+
+.posts_list{
+    padding:0
+}
+
+.news{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: var(--primaire) 0px -2px 0px 0px,
+                var(--secondaire) 0px -4px 0px 0px,
+                var(--tertiaire) 0px -6px 0px 0px;
+}
+h1{
+    text-align: center;
+    text-align: center;
+    width: 90%;
+    font-size: 1.5em;
+
+}
+.logo{
+    margin-bottom: -80px
+}
+
+.my_post{
+    width: 100%;
+    position: relative;
+    margin-bottom: 80px;
+}
+.home_button{
+    width: 90%;
+}
+#new_posts{
+    width: 90%;
+}
+
+
+}

@@ -1,0 +1,148 @@
+:root{
+    --primaire: #FD2D01;
+    --secondaire: #FFD7D7;
+    --tertiaire: #4E5166;
+}
+
+
+html{
+    background: no-repeat linear-gradient(60deg, var(--primaire), var(--secondaire), var(--tertiaire));
+    margin:0;
+
+    min-height: 100vh;
+    overflow-y: auto;
+    
+}
+
+
+
+.textarea_container{
+    display: flex;
+    width: 30%;
+    margin-left: 15%;
+    flex-direction: column;
+}
+
+#user{
+    border: solid;
+    border-radius: 6px;
+    overflow: hidden;
+    color: var(--tertiaire);
+}
+.textarea_login{
+    height: 30px;
+    margin-top: 20px;
+    background-color: var(--secondaire);
+    border: none;
+    border-radius: 6px;
+    padding: 0;
+    min-width: 270px;
+    resize: none;
+    box-shadow: 0 0 10px var(--tertiaire);
+
+}
+.submit_container{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.submit_container input{
+    font-size: 1.2em;
+    width: 50%;
+    background-color: var(--secondaire);
+    border-radius: 6px;
+    border: none;
+    min-width: 180px;
+    color: var(--tertiaire);
+    box-shadow: inset 7px -7px 20px 0px var(--primaire);
+    height: 30px;
+}
+
+::placeholder{
+    font-size: 1.2em;
+    text-align: center;
+    font-style: oblique;
+}
+#span_nav{
+    width: 50%;
+}
+.navigation button{
+    width: 100%;
+}
+.navigation a{
+    width: 50%;
+}
+
+.navigation{
+    display: flex;
+    width: 30%;
+    min-width: 180px;
+}
+.navigation a, .navigation button{
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    background-color: var(--secondaire);
+    font-size: 1.2em;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: var(--tertiaire);
+    box-shadow: inset 7px -7px 20px 0px var(--primaire);
+}
+ .user_login {
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+
+input.user_login  {
+    height: 30px;
+    border-top: solid var(--primaire);
+    background-color: white;
+}
+.navigation a:active , .navigation button:active , .submit_container input:active{
+    color: var(--primaire);
+}
+
+.form_login{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.navigation button{
+    border:none
+}
+img{
+    max-height: 250px;
+    z-index: -1;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    max-height: 280px;
+}
+
+@media (max-width: 480px)  {
+body{
+    margin:0
+}
+.textarea_container{
+    width: 100%;
+    margin: 0;
+}
+.submit_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}}
+.submit_container input{
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
